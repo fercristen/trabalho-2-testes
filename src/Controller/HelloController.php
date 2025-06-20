@@ -42,4 +42,21 @@ class HelloController extends AbstractController
         $data = $request->getContent();
         return new Response($data);
     }
+
+    /**
+     * @Route("/banco", methods={"GET"})
+     */
+    public function testar(EntityManagerInterface $em)
+    {
+        dd($em->getConnection()->connect());
+    }
+
+    /**
+     * @Route("/phpinfo", methods={"GET"})
+     */
+    public function phpInfo()
+    {
+        phpinfo();
+    }
+
 }
