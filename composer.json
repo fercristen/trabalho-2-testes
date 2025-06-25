@@ -2,7 +2,7 @@
   "name": "app/symfony-base",
   "type": "project",
   "require": {
-    "php": "^7.1.3",
+    "php": "^8.1",
     "ext-ctype": "*",
     "ext-iconv": "*",
     "symfony/console": "^4.4",
